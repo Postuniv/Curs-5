@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of persons">
+            <td>{{person.name}}</td>
+            <td>{{person.age}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<input #name placeholder="Name">
+<input #age placeholder="Age">
+<button (click)="addPerson()">Add</button>

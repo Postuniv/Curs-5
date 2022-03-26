@@ -1,0 +1,23 @@
+<section *ngIf="movies && movies.length > 0; else nodata">
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Director</th>
+                <th>Running time</th>
+                <th>RottenTomatoes Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td>{{movie.title}}</td>
+                <td>{{movie.description}}</td>
+                <td>{{movie.director}}</td>
+                <td>{{movie.running_time}}</td>
+                <td>{{movie.rt_score}}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<ng-template #nodata>Loading...</ng-template>
