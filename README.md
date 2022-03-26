@@ -1,3 +1,13 @@
+# Proiectul Angular de la cursul 5
+
+Pentru a rula proiectul:
+- git clone acest repository
+- npm install
+- ng build
+- ng serve
+
+---
+
 # FirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
