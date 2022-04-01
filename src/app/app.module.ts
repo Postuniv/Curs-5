@@ -9,14 +9,19 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     TableDataComponent,
-    MoviesComponent
+    MoviesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
 
     MatSliderModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
