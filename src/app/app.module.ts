@@ -7,6 +7,9 @@ import { CounterComponent } from './components/counter/counter.component';
 import { TableDataComponent } from './components/table-data/table-data.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule,
+
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

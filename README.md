@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proiectul Angular de la cursul 5
 
 Pentru a rula proiectul:
@@ -35,3 +36,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Laboratoarele 6 si 7
+
+Termene de predare:
+- Săptămâna 6: o aplicație Angular cu cel puțin funcționalitățile din tutoriale
+- Săptămâna 7: minim o funcționalitate care nu există în tutorialele recomandate
+
+Realizați o aplicație Angular care gestionează o listă de lucruri de făcut (TODO List). Pentru aceasta puteți consulta următoarele tutoriale:
+- https://www.youtube.com/watch?v=gvWxMQ_Zios
+- https://www.youtube.com/watch?v=i7KaVFOXNUQ
+- https://www.youtube.com/watch?v=hdxaL551G_Q
+
+>>>>>>> b51c92513a88342a184581cdd2697e555ca268c6

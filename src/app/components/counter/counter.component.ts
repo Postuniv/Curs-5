@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSlider, MatSliderChange } from '@angular/material/slider';
 
 @Component({
   selector: 'app-counter',
@@ -19,5 +20,13 @@ export class CounterComponent implements OnInit {
 
   decrement() {
     this.counterValue--;
+  }
+
+  onSliderChange(event: MatSliderChange) {
+    if (event.value === null) {
+      this.counterValue = 0;
+    } else {
+      this.counterValue = event.value;
+    }
   }
 }

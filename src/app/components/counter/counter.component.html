@@ -1,7 +1,16 @@
 <div>
     <p>Current counter value: {{counterValue}}</p>
+    <input matInput type="number" [(ngModel)]="counterValue">
 
     <button (click)="increment()">Increment</button>
     <button (click)="decrement()">Decrement</button>
+
+    <mat-slider 
+        min="1" 
+        max="100" 
+        step="1" 
+        value="50" 
+        [(ngModel)]="counterValue"
+        (change)="onSliderChange($event)"></mat-slider>
 
 </div>
