@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
     CounterComponent,
     TableDataComponent,
     MoviesComponent,
-    HeaderComponent
+    HeaderComponent,
+    TicTacToeComponent
   ],
   imports: [
     BrowserModule,

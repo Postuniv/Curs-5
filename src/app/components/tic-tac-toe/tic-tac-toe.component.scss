@@ -1,0 +1,32 @@
+.play-area {
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+.play-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-cell {
+    border: 2px solid green;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.game-controls, .winner-info {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.stats-info {
+    display: flex;
+    justify-content: space-around;
+}

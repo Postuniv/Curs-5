@@ -1,0 +1,39 @@
+
+<div class="game-controls">
+    <div class="stats-info">
+        <div><strong>X:</strong></div><div>{{ this.stats['X'] }}</div>
+    </div>
+    <div class="stats-info">
+        <div><strong>0:</strong></div><div>{{ this.stats['O'] }}</div>
+    </div>        
+    <div class="stats-info">
+        <div><strong>Draws:</strong></div><div>{{ this.stats['Draw'] }}</div>
+    </div>
+    <div>
+        <button (click)="newGame()">New game</button>
+    </div>
+
+    <div>
+        Table size:
+        <mat-slider 
+            thumbLabel
+            min="3" 
+            max="10" 
+            step="1" 
+            value="3" 
+            [(ngModel)]="size"
+            (change)="onSliderChange($event)"></mat-slider>
+    </div>
+</div>
+
+<div class="winner-info" *ngIf="this.winner !== ''">
+    {{this.winner}} has won this game!
+</div>
+
+<div class="play-area">
+    <div class="play-row" *ngFor="let row of data; let i=index">
+        <div class="play-cell" *ngFor="let value of row; let j=index" (click)="cellClick(i, j)">
+            {{value}}
+        </div>
+    </div>
+</div>
